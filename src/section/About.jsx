@@ -63,7 +63,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Available for Remote & On-site Opportunities</p>
                             <p className="grid-subtext">Based in Springfield, MO, USA. Open to both remote and on-site positions worldwide.</p>
-                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                            <a href="#contact" className="w-fit"><Button name="Contact Me" isBeam containerClass="w-full mt-10" /></a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Professional Experience</p>
                             <p className="grid-subtext">
-                                With experience at companies like Infosys and Chegg, I've led development teams, architected e-commerce solutions,
+                                With experience at companies like Infosys and Esdy, I've led development teams, architected e-commerce solutions,
                                 and implemented automated CI/CD pipelines for streamlined deployments. I'm passionate about optimizing
                                 performance and creating robust, scalable applications.
                             </p>

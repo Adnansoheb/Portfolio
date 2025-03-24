@@ -28,16 +28,17 @@ const Hero = () => {
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
                     Hi, I'm Adnan <span className="waving-hand">👋</span>
                 </p>
-                <p className="hero_tag text-gray_gradient">Full-Stack Engineer & Solutions Architect</p>
+                <p className="hero_tag text-gray_gradient">Full-Stack Java Developer</p>
 
                 {/* Added a subtitle showcasing key expertise */}
                 <p className="sm:text-xl text-lg text-center text-gray-400 max-w-2xl mx-auto">
-                    Specializing in enterprise applications, cloud infrastructure, and scalable solutions
+                    Specializing in enterprise applications, microservices, cloud infrastructure, and scalable solutions
                 </p>
 
                 {/* Added tech badges */}
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
-                    {['Java', 'Spring Boot', 'React', 'Python', 'Node.js', 'AWS'].map((tech) => (
+                    {['Java 17', 'Spring Boot', 'React', 'AWS', 'Docker', 'Kubernetes',
+                        'Microservices', 'Kafka', 'TypeScript', 'MySQL'].map((tech) => (
                         <span
                             key={tech}
                             className="px-3 py-1 text-sm bg-gray-800 text-gray-200 rounded-full"

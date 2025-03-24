@@ -150,17 +150,6 @@ export const myProjects = [
     }
 ];
 
-export const calculateSizes = (isSmall, isMobile, isTablet) => {
-    return {
-        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-        deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-        cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
-    };
-};
-
 export const workExperiences = [
     {
         id: 1,
@@ -173,15 +162,24 @@ export const workExperiences = [
     },
     {
         id: 2,
+        name: 'Esdy Information Systems',
+        pos: 'Java Developer',
+        duration: '2019 - 2021',
+        title: "Built enterprise applications with Spring Data JPA/Hibernate. Reduced API response times by 45% through Redis caching. Led 5-developer Agile team with 98% sprint completion rate.",
+        icon: '/assets/esdy.png',
+        animation: 'clapping',
+    },
+    {
+        id: 3,
         name: 'Chegg, Inc',
         pos: 'Subject Matter Expert',
-        duration: '2020 - 2022',
+        duration: '2020 - 2021',
         title: "Specialized in algorithms, data structures, and system design. Provided technical solutions and personalized learning support with excellent ratings.",
         icon: '/assets/chegg.png',
         animation: 'clapping',
     },
     {
-        id: 3,
+        id: 4,
         name: 'ECIL',
         pos: 'Information Technology Intern',
         duration: '2018 - 2018',
@@ -190,3 +188,14 @@ export const workExperiences = [
         animation: 'salute',
     },
 ];
+
+export const calculateSizes = (isSmall, isMobile, isTablet) => {
+    return {
+        deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
+        deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+        cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+        targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+    };
+};
