@@ -8,11 +8,11 @@ import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
 import Button from '../components/Button.jsx';
-import Target from '../components/Target.jsx';
+//import Target from '../components/Target.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
-import HeroCamera from '../components/HeroCamera.jsx';
+//import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
-import HackerRoom from '../components/HackerRoom.jsx';
+//import HackerRoom from '../components/HackerRoom.jsx';
 
 const Hero = () => {
     // Use media queries to determine screen size
@@ -24,9 +24,9 @@ const Hero = () => {
 
     return (
         <section className="min-h-screen w-full flex flex-col relative" id="home">
-            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 hero-text">
                 <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-                    Hi, I'm Adnan <span className="waving-hand">👋</span>
+                    Hi, I&apos;m Adnan <span className="waving-hand">👋</span>
                 </p>
                 <p className="hero_tag text-gray_gradient">Full-Stack Java Developer</p>
 
@@ -49,8 +49,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="w-full h-full absolute inset-0">
-                <Canvas className="w-full h-full">
+            <div className="w-full h-full absolute inset-0 z-0">
+                <Canvas className="w-full h-full" gl={{ alpha: true }}>
                     <Suspense fallback={<CanvasLoader />}>
                         <Leva hidden />
                         <PerspectiveCamera makeDefault position={[0, 0, 30]} />
@@ -64,7 +64,7 @@ const Hero = () => {
                         {/*</HeroCamera>*/}
 
                         <group>
-                            <Target position={sizes.targetPosition} />
+                            {/*<Target position={sizes.targetPosition} />*/}
                             <ReactLogo position={sizes.reactLogoPosition} />
                             <Rings position={sizes.ringPosition} />
                             <Cube position={sizes.cubePosition} />
@@ -76,7 +76,7 @@ const Hero = () => {
                 </Canvas>
             </div>
 
-            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space flex flex-col items-center gap-4">
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space ...">
                 {/* Added a brief stats section */}
                 <div className="flex gap-8 justify-center flex-wrap">
                     <div className="text-center">

@@ -29,7 +29,7 @@ const Clients = () => {
             <div className="flex flex-col items-center mb-12">
                 <h3 className="head-text mb-4">Client Testimonials</h3>
                 <p className="text-white-600 text-center max-w-2xl">
-                    Feedback from professionals I've had the pleasure of working with
+                    Feedback from professionals I&apos;ve had the pleasure of working with
                 </p>
             </div>
 

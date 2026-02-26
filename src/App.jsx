@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from "./section/Navbar.jsx";
 import Hero from "./section/Hero.jsx";
 import About from "./section/About.jsx";
